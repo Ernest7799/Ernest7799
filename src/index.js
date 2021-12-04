@@ -2,16 +2,32 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+const animals = [
+  {
+      name: 'Lion',
+      kg: 200,
+      height: 1.50,
+  },
+  {
+      name: 'monkey',
+      kg: 12,
+      height: 0.3
+  },
+  {
+      name: 'cat',
+      kg: 2,
+      height: 0.2,
+  }, 
+  {
+      name: 'dog',
+      kg: 15,
+      height: 0.8,
+  }
+]
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App animals={animals} />
   </React.StrictMode>,
   document.getElementById('root')
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
